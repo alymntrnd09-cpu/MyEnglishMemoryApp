@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>الدروس</title>
+</head>
+
+<body>
+
+<h1>📚 الدروس</h1>
+
+{% for lesson in lessons %}
+
+<p>
+<button>
+{{lesson[1]}}
+</button>
+</p>
+
+{% else %}
+
+<p>لا توجد دروس</p>
+
+{% endfor %}
+
+<a href="/">
+🏠 الرئيسية
+</a>
+
+</body>
+</html>

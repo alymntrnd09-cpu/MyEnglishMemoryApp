@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>🔄 مراجعة الكلمات</h1>
+
+<div class="card">
+
+<h2>{{word}}</h2>
+
+<p>{{meaning}}</p>
+
+</div>
+
+
+<form action="/know" method="post">
+
+<input type="hidden" name="word" value="{{word}}">
+
+<button>
+✅ أعرفها
+</button>
+
+</form>
+
+
+<form action="/again" method="post">
+
+<input type="hidden" name="word" value="{{word}}">
+
+<button>
+❌ لم أحفظها
+</button>
+
+</form>
+
+
+{% endblock %}

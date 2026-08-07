@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>🎯 اختبار الكلمات</h1>
+
+<h2>ما معنى هذه الكلمة؟</h2>
+
+<h2>{{meaning}}</h2>
+
+<form action="/check" method="post">
+
+<input type="hidden" name="correct" value="{{word}}">
+
+<input 
+type="text" 
+name="answer"
+placeholder="اكتب الكلمة بالإنجليزي">
+
+<button type="submit">
+إجابة
+</button>
+
+</form>
+
+<a href="/">
+🏠 الرئيسية
+</a>
+
+</body>
+</html>

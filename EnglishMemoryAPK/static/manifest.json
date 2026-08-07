@@ -1,0 +1,15 @@
+{
+  "name": "English Memory",
+  "short_name": "English Memory",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2d89ef",
+  "icons": [
+    {
+      "src": "/static/icons/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

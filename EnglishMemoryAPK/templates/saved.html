@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<title>الكلمات المحفوظة</title>
+</head>
+
+<body>
+
+<h1>📖 الكلمات المحفوظة</h1>
+
+{% for w in words %}
+
+<p>
+<b>{{w[0]}}</b> = {{w[1]}}
+</p>
+
+{% endfor %}
+
+<br>
+
+<a href="/">🏠 العودة</a>
+
+</body>
+</html>

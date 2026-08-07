@@ -1,0 +1,3 @@
+[91m[1mBuildozer is running as root![0m
+[91mThis is [1mnot[0m [91mrecommended, and may lead to problems later.[0m
+Are you sure you want to continue [y/n]? 
