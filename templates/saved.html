@@ -24,3 +24,69 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكلمات المحفوظة</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>📖 الكلمات المحفوظة</h1>
+
+<p>✅ عدد الكلمات المحفوظة: {{ count }}</p>
+
+{% if words %}
+
+{% for word in words %}
+
+<div class="word-card">
+
+    <h2>{{ word[1] }}</h2>
+
+    <p>{{ word[2] }}</p>
+
+    <a href="/edit/{{ word[1] }}">✏️ تعديل</a>
+    |
+    <a href="/delete/{{ word[1] }}">🗑️ حذف</a>
+
+</div>
+
+{% endfor %}
+
+{% else %}
+
+<p>لا توجد كلمات محفوظة حتى الآن.</p>
+
+{% endif %}
+
+<br>
+
+<a href="/">
+    <button>🏠 الرئيسية</button>
+</a>
+
+</body>
+</html>

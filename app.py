@@ -300,6 +300,22 @@ def add():
 
     return render_template("add.html")
 
+@app.route("/saved")
+def saved():
+
+    conn = db()
+
+    words = conn.execute(
+        "SELECT * FROM words WHERE learned=1 ORDER BY id DESC"
+    ).fetchall()
+
+    conn.close()
+
+    return render_template(
+        "saved.html",
+        words=words,
+        count=len(words)
+    )
 
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5000, debug=False)
